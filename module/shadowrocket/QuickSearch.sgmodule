@@ -5,7 +5,7 @@
 #!tag=去广告
 #!homepage=https://hub.kelee.one
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Safari.png
-#!date=2026-10-02 13:57:49
+#!date=2026-10-12 15:50:18
 
 [URL Rewrite]
 (?i)^https://duckduckgo\.com/\?q=bd\+([^&]+).+ https://www.baidu.com/s?wd=$1 307
@@ -16,6 +16,7 @@
 (?i)^https://duckduckgo\.com/\?q=qm\+([^&]+).+ https://www.qimai.cn/search/index/country/cn/search/$1 307
 (?i)^https://duckduckgo\.com/\?q=gh\+([^&]+).+ https://github.com/search?q=$1 307
 (?i)^https://duckduckgo\.com/\?q=([^&]+).+ https://www.google.com/search?q=$1 307
+(?i)^https://duckduckgo\.com/\?q=(?!(?:bd|bdimg|gimg|b|wk|qm|gh)\+)([^&]+).+ https://www.google.com/search?q=$1 307
 
 [MITM]
 hostname = %APPEND% duckduckgo.com
