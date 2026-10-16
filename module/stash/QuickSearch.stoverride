@@ -11,7 +11,6 @@ http:
     - "(?i)^https://duckduckgo\\.com/\\?q=wk\\+([^&]+).+ https://zh.wikipedia.org/wiki/$1 307"
     - "(?i)^https://duckduckgo\\.com/\\?q=qm\\+([^&]+).+ https://www.qimai.cn/search/index/country/cn/search/$1 307"
     - "(?i)^https://duckduckgo\\.com/\\?q=gh\\+([^&]+).+ https://github.com/search?q=$1 307"
-    - "(?i)^https://duckduckgo\\.com/\\?q=([^&]+).+ https://www.google.com/search?q=$1 307"
     - "(?i)^https://duckduckgo\\.com/\\?q=(?!(?:bd|bdimg|gimg|b|wk|qm|gh)\\+)([^&]+).+ https://www.google.com/search?q=$1 307"
   mitm:
     - "duckduckgo.com"
